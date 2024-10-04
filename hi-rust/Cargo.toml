@@ -1,0 +1,29 @@
+[package]
+name = "hi-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+chrono = "0.4"
+indexmap = "2"
+napi = { version = "2.16.11", default-features = false, features = [
+  "async",
+  "napi9",
+  "serde-json",
+  "tokio",
+  "async",
+  "tokio_rt",
+] }
+napi-derive = "2.16.12"
+serde = "1"
+serde_bytes = "0.11"
+serde_derive = "1"
+serde_json = "1.0.128"
+tx5 = "0.1.3-beta"
+tokio = { version = "1.40.0", features = [ "rt", "time" ] }
+
+[build-dependencies]
+napi-build = "1.1.0"

@@ -1,0 +1,15 @@
+{
+  "name": "spike-tx5-electron",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^32.1.2"
+  },
+  "dependencies": {
+    "hi-rust": "./hi-rust"
+  }
+}

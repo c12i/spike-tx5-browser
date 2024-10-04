@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Rust tx5</title>
+  </head>
+  <body>
+    <h1>Rust tx5</h1>
+
+    <form id="sendForm">
+      <div>
+        <label for="peerUrl">PeerUrl:</label>
+        <input type="text" name="peerUrl" id="peerUrl" size=80></input>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <input type="text" name="message" id="message" size=80></input>
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+
+    <pre id="results">.</pre>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
